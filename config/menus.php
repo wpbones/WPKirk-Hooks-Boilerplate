@@ -16,17 +16,25 @@ if (!defined('ABSPATH')) {
 
 return [
   'wp_kirk_slug_menu' => [
-    "page_title" => "WP Kirk Page",
-    "menu_title" => "WP Kirk Menu",
+    "page_title" => "WP Kirk Hooks",
+    "menu_title" => "WP Kirk Hooks",
     'capability' => 'read',
     'icon' => 'wpbones-logo-menu.png',
     'items' => [
       [
-        "page_title" => "Cron Example",
-        "menu_title" => "Cron Example",
+        "page_title" => "Hooks",
+        "menu_title" => "Hooks",
         'capability' => 'read',
         'route' => [
-          'get' => 'Examples\CronController@index'
+          'get' => 'Examples\ExampleController@hooks'
+        ],
+      ],
+      [
+        "page_title" => "Modules",
+        "menu_title" => "Modules",
+        'capability' => 'read',
+        'route' => [
+          'get' => 'Examples\ExampleController@modules'
         ],
       ],
     ]

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WP Kirk Cron Boilerplate
+ * Plugin Name: WP Kirk Hooks Boilerplate
  * Plugin URI: https://github.com/wpbones/WPKirk-Boilerplate
  * Description: WP Bones Boilerplate WordPress plugin
  * Version: 1.8.0

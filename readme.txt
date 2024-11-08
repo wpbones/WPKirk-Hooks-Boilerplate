@@ -1,4 +1,4 @@
-=== WP Kirk Cron Boilerplate ===
+=== WP Kirk Hooks Boilerplate ===
 Contributors: gfazioli
 Donate link: https://wpbones.com/
 Tags: template, wpbones
@@ -8,11 +8,11 @@ Stable tag: 1.8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WP Bones Cron Boilerplate WordPress plugin.
+WP Bones Hooks Boilerplate WordPress plugin.
 
 == Description ==
 
-WP Bones Cron plugin
+WP Bones Hooks plugin
 
 == Installation ==
 

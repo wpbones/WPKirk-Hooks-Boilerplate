@@ -21,7 +21,7 @@
   "require": {
     "php": ">=7.4",
     "wpbones/wpbones": "dev-dev",
-    "wpbones/wpkirk-helpers": "~1.0"
+    "wpbones/wpkirk-helpers": "dev-dev"
   },
   "autoload": {
     "psr-4": {
