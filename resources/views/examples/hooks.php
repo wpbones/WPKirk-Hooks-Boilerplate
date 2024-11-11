@@ -22,7 +22,10 @@ ob_start()
 
     <p><?php _e('The hooks are PHP files that are automatically loaded into the folder:', 'wp-kirk'); ?></p>
 
-    <?php wpkirk_code("/plugin/hooks", false, 'sh'); ?>
+    <?php wpkirk_code(
+      "/plugin/hooks",
+      ['language' => 'sh']
+    ); ?>
 
     <p><?php _e('These can be functions, classes, anything.', 'wp-kirk'); ?></p>
 
@@ -33,35 +36,38 @@ ob_start()
 
     <p><?php _e('In this example, you will find a file named', 'wp-kirk'); ?></p>
 
-    <?php wpkirk_code("/plugin/hooks/my-first-hooks.php", false, 'sh'); ?>
+    <?php wpkirk_code("/plugin/hooks/my-first-hooks.php", ['language' => 'sh']); ?>
 
     <p><?php _e('with the following content:', 'wp-kirk'); ?></p>
 
-    <?php wpkirk_code('@/plugin/hooks/my-first-hooks.php', false, 'php'); ?>
+    <?php wpkirk_code('@/plugin/hooks/my-first-hooks.php'); ?>
 
     <p>
-      <?php wpkirk_code("my_hooks();", true, 'php'); ?>
+      <?php wpkirk_code(
+        "my_hooks();",
+        ['language' => 'php', 'eval' => true]
+      ); ?>
     </p>
 
     <p><?php _e('Try to modify the file', 'wp-kirk'); ?></p>
 
-    <?php wpkirk_code("/plugin/hooks/my-first-hooks.php", false, 'sh'); ?>
+    <?php wpkirk_code("/plugin/hooks/my-first-hooks.php", ['language' => 'sh']); ?>
 
     <!-- ----------------------------------------------------- -->
     <?php wpkirk_section(__('Advanced Usage', 'wp-kirk')); ?>
 
     <p><?php wpkirk_md(__("Another interesting example is in `/plugin/hooks/use-option.php`", 'wp-kirk')); ?></p>
 
-    <?php wpkirk_code('@/plugin/hooks/use-option.php', false, 'php'); ?>
+    <?php wpkirk_code('@/plugin/hooks/use-option.php'); ?>
 
     <p><?php wpkirk_md(__("and then use", 'wp-kirk')); ?></p>
 
     <?php wpkirk_code("[\$value, \$setValue] = useOption('hello', 'default');
-echo \$value;", true, 'php'); ?>
+echo \$value;", ['language' => 'php', 'eval' => true]); ?>
 
     <?php wpkirk_code("[\$value, \$setValue] = useOption('siteurl', 'default');
-\$value = $setValue(time());
-echo \$value;", true, 'php'); ?>
+\$value = \$setValue(time());
+echo \$value;", ['language' => 'php', 'eval' => true]); ?>
 
     <?php delete_option('test') ?>
 
