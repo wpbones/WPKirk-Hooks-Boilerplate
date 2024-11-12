@@ -6,12 +6,7 @@
  | return PluginClassName()->view( 'dashboard.index', [ 'var' => 'value' ] );
  |
 -->
-<?php
-
-
-
-ob_start()
-?>
+<?php ob_start() ?>
 
 <div class="wp-kirk wrap wp-kirk-sample">
 
