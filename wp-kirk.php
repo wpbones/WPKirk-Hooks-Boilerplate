@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: WP Kirk Hooks Boilerplate
- * Plugin URI: https://github.com/wpbones/WPKirk-Boilerplate
+ * Plugin URI: https://github.com/wpbones/WPKirk-Hooks-Boilerplate
  * Description: WP Bones Boilerplate WordPress plugin
  * Version: 1.8.0
  * Requires at least: 6.2
