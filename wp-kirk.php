@@ -6,7 +6,7 @@
  * Description: WP Bones Boilerplate WordPress plugin
  * Version: 2.0.6
  * Requires at least: 6.2
- * Requires PHP: 7.4
+ * Requires PHP: 8.1
  * Author: Giovambattista Fazioli
  * Author URI: https://wpbones.com/
  * License: GPLv2 or later
